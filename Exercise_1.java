@@ -5,11 +5,14 @@ class BinarySearch {
         /**
          * variables are first, last, middle
          * 
+         * algorithm:
+         * if first > last return -1
          * get middle value
          * if x == middle return
          * if x < middle binarySearch(int arr[], int first, int middle-1, int x)
          * if x > middle binarySearch(int arr[], int middle + 1, int last, int x)
-         * if first > last return -1
+         * 
+         * Notes: always return recursive function
          */
         if (first > last) {
             return -1;
